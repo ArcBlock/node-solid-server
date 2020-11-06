@@ -37,4 +37,6 @@ docker run --rm --network=testnet --env COOKIE_ALICE="$COOKIE_ALICE" --env COOKI
 
 docker stop server
 docker rm server
+docker stop thirdparty
+docker rm thirdparty
 docker network remove testnet
