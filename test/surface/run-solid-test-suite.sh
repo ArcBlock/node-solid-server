@@ -35,7 +35,6 @@ docker run --rm --network=testnet --env COOKIE="$COOKIE_ALICE" --env-file test/s
 # docker run --rm --network=testnet --env COOKIE="$COOKIE" --env-file /tmp/env-vars-for-test-image.list solid-crud
 docker run --rm --network=testnet --env COOKIE_ALICE="$COOKIE_ALICE" --env COOKIE_BOB="$COOKIE_BOB" --env-file test/surface/web-access-control-tests-env.list web-access-control
 
-rm /tmp/env-vars-for-test-image.list
 docker stop server
 docker rm server
 docker network remove testnet
